@@ -1,0 +1,31 @@
+{
+  "name": "artifactory-client-node",
+  "version": "0.0.1",
+  "description": "Artifactory REST Client Node",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/test.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jainishshah17/artifactory-client-node.git"
+  },
+  "keywords": [
+    "Artifactory",
+    "Node",
+    "Rest",
+    "API",
+    "artifactory-client-node"
+  ],
+  "author": "Jainish Shah",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/jainishshah17/artifactory-client-node/issues"
+  },
+  "homepage": "https://github.com/jainishshah17/artifactory-client-node#readme",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "request": "^2.88.0"
+  }
+}
