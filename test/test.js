@@ -107,3 +107,12 @@ fileProps.then(function (result) {
 }, function (err) {
     console.log(err);
 });
+
+// Delete artifacts
+var deleteArtifact =  artifacts.deleteFile("generic-local/artifactory.jpg")
+deleteArtifact.then(function (result) {
+    var result = result;
+    console.log(result)
+}, function (err) {
+    console.log(err);
+});
