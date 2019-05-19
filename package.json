@@ -1,6 +1,6 @@
 {
   "name": "artifactory-client-node",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Artifactory REST Client Node",
   "main": "index.js",
   "scripts": {
@@ -19,7 +19,7 @@
     "artifactory-client-node"
   ],
   "author": "Jainish Shah",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/jainishshah17/artifactory-client-node/issues"
   },
