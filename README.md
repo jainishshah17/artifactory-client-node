@@ -180,3 +180,30 @@ Set environment variable `export NODE_TLS_REJECT_UNAUTHORIZED=0` to ignore SSL c
         console.log(err);
     });
 ```
+
+#### Artifactory upload artifact
+```
+  var artCli = require('artifactory-client-node');
+  var artifacts = new artifactory.artifacts();
+    var uploadFile = artifacts.uploadFile("generic-local/folder/test.zip", "/Users/jainish.shah/development/jainishshah17/artifactory-client-node/test.zip");
+    uploadFile.then(function (result) {
+        var result = result;
+        console.log(result)
+    }, function (err) {
+        console.log(err);
+    });
+```
+
+
+#### Artifactory upload artifact with properties
+```
+  var artCli = require('artifactory-client-node');
+  var artifacts = new artifactory.artifacts();
+    var uploadFileWihProps = artifacts.uploadFile("generic-local/folder/test.tar", "/Users/jainish.shah/development/jainishshah17/artifactory-client-node/test.tar", ";test=passed");
+    uploadFileWihProps.then(function (result) {
+        var result = result;
+        console.log(result)
+    }, function (err) {
+        console.log(err);
+    });
+```

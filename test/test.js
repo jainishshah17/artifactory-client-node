@@ -61,13 +61,35 @@ buildDiff.then(function (result) {
 });
 
 // Delete builds
-
+var buildDelete = build.deleteBuilds("test", "2,1", "artifacts=1");
+buildDelete.then(function (result) {
+    console.log(result)
+}, function (err) {
+    console.log(err);
+});
 
 // Artifactory artifacts CRUD 
 var artifacts = new artifactory.artifacts();
 
+// Upload file
+var uploadFile = artifacts.uploadFile("generic-local/folder/test.zip", "/Users/jainish.shah/development/jainishshah17/artifactory-client-node/test.zip");
+uploadFile.then(function (result) {
+    var result = result;
+    console.log(result)
+}, function (err) {
+    console.log(err);
+});
+
+var uploadFileWihProps = artifacts.uploadFile("generic-local/folder/test.tar", "/Users/jainish.shah/development/jainishshah17/artifactory-client-node/test.tar", ";test=passed");
+uploadFileWihProps.then(function (result) {
+    var result = result;
+    console.log(result)
+}, function (err) {
+    console.log(err);
+});
+
 // Get folder Info
-var folderInfo = artifacts.getFolderInfo("generic-local/folder");
+var folderInfo = artifacts.getFolderInfo("generic-local/folder")
 folderInfo.then(function (result) {
     var result = result;
     console.log(result)
@@ -103,3 +125,9 @@ fileProps.then(function (result) {
 });
 
 // Delete artifacts
+var deleteArtifact =  artifacts.deleteFile("generic-local/artifactory.jpg");
+deleteArtifact.then(function (result) {
+    console.log(result)
+}, function (err) {
+    console.log(err);
+});

@@ -1,6 +1,6 @@
 {
     "serverId": "dev",
-    "url": "https://jainish.artifactory.com/artifactory",
+    "url": "http://jainish.artifactory.com/artifactory",
     "user": "admin",
     "password": "password"
 }
