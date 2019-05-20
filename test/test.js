@@ -61,19 +61,13 @@ buildDiff.then(function (result) {
 });
 
 // Delete builds
-var buildDelete = build.deleteBuilds("test", "2,1", "artifacts=1");
-buildDelete.then(function (result) {
-    var result = result;
-    console.log(result)
-}, function (err) {
-    console.log(err);
-});
+
 
 // Artifactory artifacts CRUD 
 var artifacts = new artifactory.artifacts();
 
 // Get folder Info
-var folderInfo = artifacts.getFolderInfo("generic-local/folder")
+var folderInfo = artifacts.getFolderInfo("generic-local/folder");
 folderInfo.then(function (result) {
     var result = result;
     console.log(result)
@@ -82,7 +76,7 @@ folderInfo.then(function (result) {
 });
 
 // Get file Info
-var fileInfo = artifacts.getFileInfo("generic-local/folder/ecstatic-3.3.1.tgz")
+var fileInfo = artifacts.getFileInfo("generic-local/folder/ecstatic-3.3.1.tgz");
 fileInfo.then(function (result) {
     var result = result;
     console.log(result)
@@ -91,7 +85,7 @@ fileInfo.then(function (result) {
 });
 
 // Get file stats
-var fileStats = artifacts.getFileStats("generic-local/folder/ecstatic-3.3.1.tgz")
+var fileStats = artifacts.getFileStats("generic-local/folder/ecstatic-3.3.1.tgz");
 fileStats.then(function (result) {
     var result = result;
     console.log(result)
@@ -100,7 +94,7 @@ fileStats.then(function (result) {
 });
 
 // Get file properties
-var fileProps = artifacts.getFileProps("generic-local/folder/ecstatic-3.3.1.tgz", "")
+var fileProps = artifacts.getFileProps("generic-local/folder/ecstatic-3.3.1.tgz", "");
 fileProps.then(function (result) {
     var result = result;
     console.log(result)
@@ -109,10 +103,3 @@ fileProps.then(function (result) {
 });
 
 // Delete artifacts
-var deleteArtifact =  artifacts.deleteFile("generic-local/artifactory.jpg")
-deleteArtifact.then(function (result) {
-    var result = result;
-    console.log(result)
-}, function (err) {
-    console.log(err);
-});
