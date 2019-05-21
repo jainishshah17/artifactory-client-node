@@ -12,6 +12,24 @@ ping.then(function (result) {
     console.log(err);
 });
 
+// Artifactory version
+var version = art.getVersion();
+version.then(function (result) {
+    var result = result;
+    console.log(result)
+}, function (err) {
+    console.log(err);
+});
+
+// Artifactory get licenses
+var licenses = art.getLicenses();
+licenses.then(function (result) {
+    var result = result;
+    console.log(result)
+}, function (err) {
+    console.log(err);
+});
+
 // Artifactory System Information
 var system = art.system();
 system.then(function (result) {
@@ -21,8 +39,34 @@ system.then(function (result) {
     console.log(err);
 });
 
+// Artifactory system storage information
+var storage = art.getStorage();
+storage.then(function (result) {
+    var result = result;
+    console.log(result)
+}, function (err) {
+    console.log(err);
+});
+
 // Artifactory build CRUD 
 var build = new artifactory.build();
+
+// Get all builds
+var uploadBuild8 = build.uploadBuild("./test/resources/build8.json");
+uploadBuild8.then(function (result) {
+    var result = result;
+    console.log(result)
+}, function (err) {
+    console.log(err);
+});
+
+var uploadBuild9 = build.uploadBuild("./test/resources/build9.json");
+uploadBuild9.then(function (result) {
+    var result = result;
+    console.log(result)
+}, function (err) {
+    console.log(err);
+});
 
 // Get all builds
 var allBuilds = build.getAllBuild();
@@ -34,7 +78,7 @@ allBuilds.then(function (result) {
 });
 
 // Get one build
-var testBuild = build.getBuild("test");
+var testBuild = build.getBuild("art-test");
 testBuild.then(function (result) {
     var result = result;
     console.log(result)
@@ -43,8 +87,17 @@ testBuild.then(function (result) {
 });
 
 // Get build information
-var build2 = build.getBuildInfo("art-test", 2);
-build2.then(function (result) {
+var buildInfo = build.getBuildInfo("art-test", 8);
+buildInfo.then(function (result) {
+    var result = result;
+    console.log(result)
+}, function (err) {
+    console.log(err);
+});
+
+// Get promote build 
+var promoteBuild = build.promoteBuild("art-test", 8, "./test/resources/promote.json");
+promoteBuild.then(function (result) {
     var result = result;
     console.log(result)
 }, function (err) {
@@ -52,7 +105,7 @@ build2.then(function (result) {
 });
 
 // Get build difference
-var buildDiff = build.getBuildDiff("test", 2, 1);
+var buildDiff = build.getBuildDiff("art-test", 9, 8);
 buildDiff.then(function (result) {
     var result = result;
     console.log(result)
@@ -61,8 +114,16 @@ buildDiff.then(function (result) {
 });
 
 // Delete builds
-var buildDelete = build.deleteBuilds("test", "2,1", "artifacts=1");
+var buildDelete = build.deleteBuilds("art-test", "8,9", "artifacts=1");
 buildDelete.then(function (result) {
+    console.log(result)
+}, function (err) {
+    console.log(err);
+});
+
+// Delete All builds
+var deleteAll = build.deleteAllBuilds("art-test", "artifacts=1");
+deleteAll.then(function (result) {
     console.log(result)
 }, function (err) {
     console.log(err);
@@ -72,7 +133,7 @@ buildDelete.then(function (result) {
 var artifacts = new artifactory.artifacts();
 
 // Upload file
-var uploadFile = artifacts.uploadFile("generic-local/folder/test.zip", "/Users/jainish.shah/development/jainishshah17/artifactory-client-node/test.zip");
+var uploadFile = artifacts.uploadFile("generic-local/folder/test.zip", "./test/resources/test.zip");
 uploadFile.then(function (result) {
     var result = result;
     console.log(result)
@@ -80,7 +141,7 @@ uploadFile.then(function (result) {
     console.log(err);
 });
 
-var uploadFileWihProps = artifacts.uploadFile("generic-local/folder/test.tar", "/Users/jainish.shah/development/jainishshah17/artifactory-client-node/test.tar", ";test=passed");
+var uploadFileWihProps = artifacts.uploadFile("generic-local/folder/test.tar", "./test/resources/test.tar", ";test=passed");
 uploadFileWihProps.then(function (result) {
     var result = result;
     console.log(result)

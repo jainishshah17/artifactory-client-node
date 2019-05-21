@@ -1,0 +1,45 @@
+{
+    "properties" : {
+      "buildInfo.env.LANG" : "en_US.UTF-8",
+      "buildInfo.env.XPC_FLAGS" : "0x0",
+      "buildInfo.env.__CF_USER_TEXT_ENCODING" : "0x1F6:0x0:0x0",
+      "buildInfo.env.COLORTERM" : "truecolor",
+      "buildInfo.env.SHLVL" : "1",
+      "buildInfo.env.PWD" : "/Users/jainish.shah/development/workday",
+      "buildInfo.env.TERM_SESSION_ID" : "w0t0p1:C9D7969E-FA3E-4123-A8AE-B81DF823D1EF",
+      "buildInfo.env.SHELL" : "/bin/bash",
+      "buildInfo.env.SSH_AUTH_SOCK" : "/private/tmp/com.apple.launchd.eSYqHOGXap/Listeners",
+      "buildInfo.env.TERM_PROGRAM" : "iTerm.app",
+      "buildInfo.env.USER" : "jainish.shah",
+      "buildInfo.env.XPC_SERVICE_NAME" : "0",
+      "buildInfo.env.Apple_PubSub_Socket_Render" : "/private/tmp/com.apple.launchd.Pi5RTJ6pXa/Render",
+      "buildInfo.env.COLORFGBG" : "7;0",
+      "buildInfo.env.TMPDIR" : "/var/folders/x5/qkhplp_d3yn1b5ky4cm_mkt40000gp/T/",
+      "buildInfo.env._" : "/usr/local/bin/jfrog",
+      "buildInfo.env.ITERM_PROFILE" : "Default",
+      "buildInfo.env.ITERM_SESSION_ID" : "w0t0p1:C9D7969E-FA3E-4123-A8AE-B81DF823D1EF",
+      "buildInfo.env.OLDPWD" : "/Users/jainish.shah/development",
+      "buildInfo.env.HOME" : "/Users/jainish.shah",
+      "buildInfo.env.TERM" : "xterm-256color",
+      "buildInfo.env.LOGNAME" : "jainish.shah",
+      "buildInfo.env.TERM_PROGRAM_VERSION" : "3.2.9",
+      "buildInfo.env.COMMAND_MODE" : "unix2003",
+      "buildInfo.env.PATH" : "/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin",
+      "buildInfo.env.SECURITYSESSIONID" : "186aa",
+      "buildInfo.env.TEST" : "passed"
+    },
+    "version" : "1.0.1",
+    "name" : "art-test",
+    "number" : "9",
+    "buildAgent" : {
+      "name" : "GENERIC",
+      "version" : "1.25.0"
+    },
+    "agent" : {
+      "name" : "jfrog-cli-go",
+      "version" : "1.25.0"
+    },
+    "started" : "2019-05-17T15:30:43.298-0700",
+    "durationMillis" : 0,
+    "artifactoryPrincipal" : "admin"
+  }

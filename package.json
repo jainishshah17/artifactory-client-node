@@ -25,7 +25,9 @@
   },
   "homepage": "https://github.com/jainishshah17/artifactory-client-node#readme",
   "dependencies": {
+    "assert": "^2.0.0",
     "fs": "0.0.1-security",
+    "mocha": "^6.1.4",
     "path": "^0.12.7",
     "request": "^2.88.0"
   }
