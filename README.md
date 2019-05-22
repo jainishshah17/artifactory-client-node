@@ -57,6 +57,60 @@ Set environment variable `export NODE_TLS_REJECT_UNAUTHORIZED=0` to ignore SSL c
   });
 ```
 
+#### Artifactory get licenses
+```
+  var artCli = require('artifactory-client-node');
+  var art = new artCli.artifactory();
+
+    var licenses = art.getLicenses();
+    licenses.then(function (result) {
+        var result = result;
+        console.log(result)
+    }, function (err) {
+        console.log(err);
+    });
+```
+
+#### Artifactory version
+```
+  var artCli = require('artifactory-client-node');
+  var art = new artCli.artifactory();
+    var version = art.getVersion();
+    version.then(function (result) {
+        var result = result;
+        console.log(result)
+    }, function (err) {
+        console.log(err);
+    });
+```
+
+#### Artifactory system storage information
+```
+  var artCli = require('artifactory-client-node');
+  var art = new artCli.artifactory();
+
+    var storage = art.getStorage();
+    storage.then(function (result) {
+        var result = result;
+        console.log(result)
+    }, function (err) {
+        console.log(err);
+    });
+```
+
+#### Artifactory Upload build
+```
+  var artCli = require('artifactory-client-node');
+  var build = new artCli.build();
+    var uploadBuild8 = build.uploadBuild("./test/resources/build8.json");
+    uploadBuild8.then(function (result) {
+        var result = result;
+        console.log(result)
+    }, function (err) {
+        console.log(err);
+    });
+```
+
 #### Artifactory get all builds
 ```
   var artCli = require('artifactory-client-node');
@@ -77,6 +131,20 @@ Set environment variable `export NODE_TLS_REJECT_UNAUTHORIZED=0` to ignore SSL c
 
   var testBuild = build.getBuild("test");
     testBuild.then(function (result) {
+        console.log(result)
+    }, function (err) {
+        console.log(err);
+    });
+```
+
+#### Artifactory promote build 
+```
+  var artCli = require('artifactory-client-node');
+  var build = new artCli.build();
+
+    var promoteBuild = build.promoteBuild("art-test", 8, "./test/resources/promote.json");
+    promoteBuild.then(function (result) {
+        var result = result;
         console.log(result)
     }, function (err) {
         console.log(err);
@@ -113,6 +181,18 @@ Set environment variable `export NODE_TLS_REJECT_UNAUTHORIZED=0` to ignore SSL c
   var build = new artCli.build();
     var buildDelete = build.deleteBuilds("test", "2,1", "artifacts=1");
     buildDelete.then(function (result) {
+        console.log(result)
+    }, function (err) {
+        console.log(err);
+    });
+```
+
+#### Artifactory delete all builds
+```
+  var artCli = require('artifactory-client-node');
+  var build = new artCli.build();
+    var deleteAll = build.deleteAllBuilds("art-test", "artifacts=1");
+    deleteAll.then(function (result) {
         console.log(result)
     }, function (err) {
         console.log(err);
@@ -201,6 +281,133 @@ Set environment variable `export NODE_TLS_REJECT_UNAUTHORIZED=0` to ignore SSL c
   var artifacts = new artifactory.artifacts();
     var uploadFileWihProps = artifacts.uploadFile("generic-local/folder/test.tar", "/Users/jainish.shah/development/jainishshah17/artifactory-client-node/test.tar", ";test=passed");
     uploadFileWihProps.then(function (result) {
+        var result = result;
+        console.log(result)
+    }, function (err) {
+        console.log(err);
+    });
+```
+
+#### Artifactory create user
+```
+  var artCli = require('artifactory-client-node');
+  var security = new artifactory.security();
+    
+    var creatUser = security.createUser("jainishs", "./test/resources/user.json");
+    creatUser.then(function (result) {
+        var result = result;
+        console.log(result)
+    }, function (err) {
+        console.log(err);
+    });
+```
+
+#### Artifactory get all users
+```
+  var artCli = require('artifactory-client-node');
+  var security = new artifactory.security();
+   
+   var getAllUsers = security.getAllUsers();
+    getAllUsers.then(function (result) {
+        var result = result;
+        console.log(result)
+    }, function (err) {
+        console.log(err);
+    });
+```
+
+#### Artifactory get user
+```
+  var artCli = require('artifactory-client-node');
+  var security = new artifactory.security();
+   
+    var getUser = security.getUser("jainishs");
+    getUser.then(function (result) {
+        var result = result;
+        console.log(result)
+    }, function (err) {
+        console.log(err);
+    });
+```
+
+
+#### Artifactory encrypted password
+```
+  var artCli = require('artifactory-client-node');
+  var security = new artifactory.security();
+   
+    var encryptedPassword = security.getEncryptedPassword();
+    encryptedPassword.then(function (result) {
+        var result = result;
+        console.log(result)
+    }, function (err) {
+        console.log(err);
+    });
+```
+
+#### Artifactory create API key
+```
+  var artCli = require('artifactory-client-node');
+  var security = new artifactory.security();
+   
+    var createApiKey = security.createApiKey();
+    createApiKey.then(function (result) {
+        var result = result;
+        console.log(result)
+    }, function (err) {
+        console.log(err);
+    });
+```
+
+#### Artifactory regenerate API key
+```
+  var artCli = require('artifactory-client-node');
+  var security = new artifactory.security();
+   
+    var regenApiKey = security.regenerateApiKey();
+    regenApiKey.then(function (result) {
+        var result = result;
+        console.log(result)
+    }, function (err) {
+        console.log(err);
+    });
+```
+
+#### Artifactory get API key
+```
+  var artCli = require('artifactory-client-node');
+  var security = new artifactory.security();
+   
+    var getApiKey = security.getApiKey();
+    getApiKey.then(function (result) {
+        var result = result;
+        console.log(result)
+    }, function (err) {
+        console.log(err);
+    });
+```
+
+#### Artifactory revoke API key
+```
+  var artCli = require('artifactory-client-node');
+  var security = new artifactory.security();
+   
+    var revokeApiKey = security.revokeApiKey();
+    revokeApiKey.then(function (result) {
+        var result = result;
+        console.log(result)
+    }, function (err) {
+        console.log(err);
+    });
+```
+
+#### Artifactory revoke user API key
+```
+  var artCli = require('artifactory-client-node');
+  var security = new artifactory.security();
+   
+    var revokeUserApiKey = security.revokeUserApiKey("jainishs");
+    revokeUserApiKey.then(function (result) {
         var result = result;
         console.log(result)
     }, function (err) {

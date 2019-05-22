@@ -1,0 +1,10 @@
+{
+     "name": "jainishs",
+     "email" : "jainishshah@yahoo.com",
+     "password": "May2019#" ,
+     "admin": false,
+     "profileUpdatable": true,
+     "disableUIAccess" : true,
+     "internalPasswordDisabled": false,
+     "realm": "Internal"
+  }

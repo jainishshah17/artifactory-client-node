@@ -1,0 +1,6 @@
+{
+    "name": "dev",
+    "description": "The development group",
+    "autoJoin": false,
+    "adminPrivileges": false
+}
