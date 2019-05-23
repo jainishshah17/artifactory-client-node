@@ -4,14 +4,14 @@ var artCli = require('..');
 var build = new artCli.build();
 
 describe('Build Tests', function () {
-    beforeEach(function() {
+    beforeEach(function () {
         function sleep(delay) {
             var start = new Date().getTime();
             while (new Date().getTime() < start + delay);
-          };
-          sleep(1000);
-      });
-      
+        };
+        sleep(1000);
+    });
+
     it('upload build 8', function () {
         var uploadBuild8 = build.uploadBuild("./test/resources/build8.json");
         uploadBuild8.then(function (result) {
