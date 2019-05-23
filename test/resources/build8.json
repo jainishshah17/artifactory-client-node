@@ -1,44 +1,357 @@
 {
-    "properties" : {
-      "buildInfo.env.LANG" : "en_US.UTF-8",
-      "buildInfo.env.XPC_FLAGS" : "0x0",
-      "buildInfo.env.__CF_USER_TEXT_ENCODING" : "0x1F6:0x0:0x0",
-      "buildInfo.env.COLORTERM" : "truecolor",
-      "buildInfo.env.SHLVL" : "1",
-      "buildInfo.env.PWD" : "/Users/jainish.shah/development/workday",
-      "buildInfo.env.TERM_SESSION_ID" : "w0t0p1:C9D7969E-FA3E-4123-A8AE-B81DF823D1EF",
-      "buildInfo.env.SHELL" : "/bin/bash",
-      "buildInfo.env.SSH_AUTH_SOCK" : "/private/tmp/com.apple.launchd.eSYqHOGXap/Listeners",
-      "buildInfo.env.TERM_PROGRAM" : "iTerm.app",
-      "buildInfo.env.USER" : "jainish.shah",
-      "buildInfo.env.XPC_SERVICE_NAME" : "0",
-      "buildInfo.env.Apple_PubSub_Socket_Render" : "/private/tmp/com.apple.launchd.Pi5RTJ6pXa/Render",
-      "buildInfo.env.COLORFGBG" : "7;0",
-      "buildInfo.env.TMPDIR" : "/var/folders/x5/qkhplp_d3yn1b5ky4cm_mkt40000gp/T/",
-      "buildInfo.env._" : "/usr/local/bin/jfrog",
-      "buildInfo.env.ITERM_PROFILE" : "Default",
-      "buildInfo.env.ITERM_SESSION_ID" : "w0t0p1:C9D7969E-FA3E-4123-A8AE-B81DF823D1EF",
-      "buildInfo.env.OLDPWD" : "/Users/jainish.shah/development",
-      "buildInfo.env.HOME" : "/Users/jainish.shah",
-      "buildInfo.env.TERM" : "xterm-256color",
-      "buildInfo.env.LOGNAME" : "jainish.shah",
-      "buildInfo.env.TERM_PROGRAM_VERSION" : "3.2.9",
-      "buildInfo.env.COMMAND_MODE" : "unix2003",
-      "buildInfo.env.PATH" : "/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin",
-      "buildInfo.env.SECURITYSESSIONID" : "186aa"
-    },
-    "version" : "1.0.1",
-    "name" : "art-test",
-    "number" : "8",
-    "buildAgent" : {
-      "name" : "GENERIC",
-      "version" : "1.25.0"
-    },
-    "agent" : {
-      "name" : "jfrog-cli-go",
-      "version" : "1.25.0"
-    },
-    "started" : "2019-05-17T15:30:43.298-0700",
-    "durationMillis" : 0,
-    "artifactoryPrincipal" : "admin"
-  }
+  "properties" : {
+    "buildInfo.env.XPC_FLAGS" : "0x0",
+    "buildInfo.env.LANG" : "en_US.UTF-8",
+    "buildInfo.env.__CF_USER_TEXT_ENCODING" : "0x1F6:0x0:0x0",
+    "buildInfo.env.COLORTERM" : "truecolor",
+    "buildInfo.env.SHLVL" : "1",
+    "buildInfo.env.PWD" : "/Users/jainish.shah/development/jainishshah17/artifactory-client-node",
+    "buildInfo.env.TERM_SESSION_ID" : "w1t0p1:CD18E622-049C-4BEB-9943-6538EE7A039B",
+    "buildInfo.env.SHELL" : "/bin/bash",
+    "buildInfo.env.SSH_AUTH_SOCK" : "/private/tmp/com.apple.launchd.eJcIqQL4OX/Listeners",
+    "buildInfo.env.TERM_PROGRAM" : "iTerm.app",
+    "buildInfo.env.USER" : "jainish.shah",
+    "buildInfo.env.XPC_SERVICE_NAME" : "0",
+    "buildInfo.env.Apple_PubSub_Socket_Render" : "/private/tmp/com.apple.launchd.9HIfFdLqmk/Render",
+    "buildInfo.env.COLORFGBG" : "7;0",
+    "buildInfo.env.TMPDIR" : "/var/folders/x5/qkhplp_d3yn1b5ky4cm_mkt40000gp/T/",
+    "buildInfo.env._" : "/usr/local/bin/jfrog",
+    "buildInfo.env.ITERM_PROFILE" : "Default",
+    "buildInfo.env.ITERM_SESSION_ID" : "w1t0p1:CD18E622-049C-4BEB-9943-6538EE7A039B",
+    "buildInfo.env.OLDPWD" : "/Users/jainish.shah",
+    "buildInfo.env.HOME" : "/Users/jainish.shah",
+    "buildInfo.env.TERM" : "xterm-256color",
+    "buildInfo.env.LOGNAME" : "jainish.shah",
+    "buildInfo.env.TERM_PROGRAM_VERSION" : "3.2.9",
+    "buildInfo.env.COMMAND_MODE" : "unix2003",
+    "buildInfo.env.PATH" : "/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin",
+    "buildInfo.env.SECURITYSESSIONID" : "186ad"
+  },
+  "version" : "1.0.1",
+  "name" : "artifactory-client-node",
+  "number" : "8",
+  "buildAgent" : {
+    "name" : "GENERIC",
+    "version" : "1.25.0"
+  },
+  "agent" : {
+    "name" : "jfrog-cli-go",
+    "version" : "1.25.0"
+  },
+  "started" : "2019-05-23T11:33:14.570-0700",
+  "durationMillis" : 0,
+  "artifactoryPrincipal" : "admin",
+  "vcsRevision" : "d938557e8a2d112d7a0f31e4f67ee51d60a1e79c",
+  "vcsUrl" : "https://github.com/jainishshah17/artifactory-client-node.git",
+  "modules" : [ {
+    "properties" : { },
+    "id" : "artifactory-client-node:0.0.8",
+    "artifacts" : [ {
+      "sha1" : "c0d31f237a92b11e29c13110316583c77cab4213",
+      "sha256" : "b07deae90f05a014dff9e2e42e78713b9a6b020c411493098e20ce1d66a2a0bb",
+      "md5" : "0c8cb38ae9f9f56daa86fd3706bfe16e",
+      "name" : "artifactory-client-node-0.0.8.tgz"
+    } ],
+    "dependencies" : [ {
+      "sha1" : "f12e0f3c5d77b0b1cdd9146942e4e96c1e4dd525",
+      "sha256" : "47ab5c4571504bdee569f03e3423af5b51aa17d6a94866ddcae353ed2d9033eb",
+      "md5" : "8284f902f2d7c5933840e9062de2241e",
+      "id" : "assert-plus-1.0.0.tgz",
+      "scopes" : [ "production" ]
+    }, {
+      "sha1" : "1b681c21ff84033c826543090689420d187151dc",
+      "sha256" : "4d7eb172144890213264deda324bd94a7654302265d18e66bfaa63a351fdae98",
+      "md5" : "a56bd266e79aba281ea50cf2dba000fa",
+      "id" : "caseless-0.12.0.tgz",
+      "scopes" : [ "production" ]
+    }, {
+      "sha1" : "633c2c83e3da42a502f52466022480f4208261de",
+      "sha256" : "7f5f58e9b54e87e264786e7e84d9e078aaf68c1003de9fa68945101e02356cdf",
+      "md5" : "5fab4bb68d920d26a1029377bb99fa46",
+      "id" : "inherits-2.0.3.tgz",
+      "scopes" : [ "production" ]
+    }, {
+      "sha1" : "d5142c0caee6b1189f87d3a76111064f86c8bbf2",
+      "sha256" : "c0fdc9166f441026aedca007c1497dfed2b44e95f93071c2123670c5b451f7ca",
+      "md5" : "e5de31e653dc663055b960d3bea603f7",
+      "id" : "fast-json-stable-stringify-2.0.0.tgz",
+      "scopes" : [ "production" ]
+    }, {
+      "sha1" : "e9aa86d0101b5b105cbe93ac6b784cd547276184",
+      "sha256" : "4274ae95c6e58b5764deeaabf73ee439f2640cd3f0f4b1b9d653737f05920ff0",
+      "md5" : "dd76523001caec18c7962d695d4c0e83",
+      "id" : "psl-1.1.31.tgz",
+      "scopes" : [ "production" ]
+    }, {
+      "sha1" : "1b4af4955eb3077c501c23872fc6513811587131",
+      "sha256" : "505f8ff9b83df6853deaf3b04852a48e9845963be04d4605313c6cabf8b4ee68",
+      "md5" : "6e363931242a2d61b006841a485af0ac",
+      "id" : "uuid-3.3.2.tgz",
+      "scopes" : [ "production" ]
+    }, {
+      "sha1" : "a65057e998db090f732a68f6c276d387d4126c32",
+      "sha256" : "c5c595c2f59c98b9d18b2a9b4896788e79950c8948b3b6c209cbb54056d825ce",
+      "md5" : "36dfc7a46814c96610557efeb1bee544",
+      "id" : "mime-db-1.40.0.tgz",
+      "scopes" : [ "production" ]
+    }, {
+      "sha1" : "44fa161b0187b9549dd84bb91802f9bd8385cd6a",
+      "sha256" : "78812f65ae3b98071ce1c9bacbe0666f4220d0b2753c2a11530eb27df440a3b3",
+      "md5" : "1ea31bbc681f283e6148edd28904b3b3",
+      "id" : "safer-buffer-2.1.2.tgz",
+      "scopes" : [ "production" ]
+    }, {
+      "sha1" : "c3d45a8b34fd730631a110a8a2520682b31d5a7f",
+      "sha256" : "b6be5aabe53e90635beb77cd0e0ba7ae6a25c8cf903b15fcc342353e732e1512",
+      "md5" : "08f30e7b4b1e471621c039e96acad86d",
+      "id" : "combined-stream-1.0.8.tgz",
+      "scopes" : [ "production" ]
+    }, {
+      "sha1" : "9c2fca4f7d35b592efe57c7f0a55e81052124fef",
+      "sha256" : "61af775fd5eb513dfac1569edb60518a65c10a47009abd8d5074ba6b434adaa4",
+      "md5" : "d2f4658aa40c2abdca764aa40c6fca07",
+      "id" : "request-2.88.0.tgz",
+      "scopes" : [ "production" ]
+    }, {
+      "sha1" : "f8b1136b4071fbd8eb140aff858b1019ec2915fa",
+      "sha256" : "1d91d0b0faa50cba223fa937c7b5a4a662968b1d78b3e59dca5c917dd5cf72b2",
+      "md5" : "df4de1d88eebbf445584322ecbb7d65e",
+      "id" : "extend-3.0.2.tgz",
+      "scopes" : [ "production" ]
+    }, {
+      "sha1" : "3a105ca17053af55d6e270c1f8288682e18da400",
+      "sha256" : "019b4544dc60b21b7f325205967d0aafb72c618570499933ed25e16d0d799e6b",
+      "md5" : "75487bf6e91e3a17798930de0b6041af",
+      "id" : "verror-1.10.0.tgz",
+      "scopes" : [ "production" ]
+    }, {
+      "sha1" : "b46e890934a9591f2d2f6f86d7e6a9f1b3fe76a8",
+      "sha256" : "a8f9f4956c5951460f7298586ff35776fbabf4a686ef13bb7716c07703e07289",
+      "md5" : "afa4784ebc8d35ccd94822bdf80ce823",
+      "id" : "aws-sign2-0.7.0.tgz",
+      "scopes" : [ "production" ]
+    }, {
+      "sha1" : "8a7bd37186b6dddf3813f23858b57ecaaf5e41d4",
+      "sha256" : "e6666d480c4b54872fd65b25821763181b092e64dcfef65be36dbf194056a81d",
+      "md5" : "ea04b6ebe611dbcbc5efc46e6124bea0",
+      "id" : "fs-0.0.1-security.tgz",
+      "scopes" : [ "production" ]
+    }, {
+      "sha1" : "53f36da3f47783b0925afa06ff9f3b165280f781",
+      "sha256" : "87bf546f0d24d57347e357126c732967e9930a9d0ca233f4ecf74f573022a253",
+      "md5" : "a27bde51ede38b03d579923358c3c475",
+      "id" : "tough-cookie-2.4.3.tgz",
+      "scopes" : [ "production" ]
+    }, {
+      "sha1" : "1296a2d58fd45f19a0f6ce01d65701e2c735b6eb",
+      "sha256" : "b7fbbf65c0bff6d47f516c98638229dff0e981d0edfffecbcf971d7fe361928a",
+      "md5" : "19316b96acffad93c4ff6774b4af6465",
+      "id" : "json-stringify-safe-5.0.1.tgz",
+      "scopes" : [ "production" ]
+    }, {
+      "sha1" : "6309f4e0e5fa913ec1c69307ae364b4b377c9e7b",
+      "sha256" : "068f99ddeff11741bd1ebbbe3ee4c6f782731bd9ae0a2d598536cce74e289045",
+      "md5" : "a52671116e28a40276d1ea5d4c9e7247",
+      "id" : "performance-now-2.1.0.tgz",
+      "scopes" : [ "production" ]
+    }, {
+      "sha1" : "8d2475dfab553bb33e77b54e59e880bb8ce23136",
+      "sha256" : "e1a444974c38e516e8a0cd7a87b62d5fa6df78d41a02f5fc246f9e566793d53b",
+      "md5" : "e52df5062c44aa0c650c9128e3b5e1ee",
+      "id" : "asn1-0.2.4.tgz",
+      "scopes" : [ "production" ]
+    }, {
+      "sha1" : "47a7b016baa68b5fa0ecf3dee08a85c679ac6455",
+      "sha256" : "0016af1761003d0c45eb7bdc965561b518c1c1c6b8885d4967fd1ab4afa0d9bc",
+      "md5" : "e0f32f9b22c3f5a48bce7ba4c75dd751",
+      "id" : "oauth-sign-0.9.0.tgz",
+      "scopes" : [ "production" ]
+    }, {
+      "sha1" : "a5e654c2e5a2deb5f201d96cefbca80c0ef2f513",
+      "sha256" : "5ac44bc9490a2d7da45ebb7028ff9b86bf17944741e7c449573d7a147ae72323",
+      "md5" : "5d011f0d46641e263915879febada330",
+      "id" : "jsbn-0.1.1.tgz",
+      "scopes" : [ "production" ]
+    }, {
+      "sha1" : "5ae68177f192d4456269d108afa93ff8743f4f64",
+      "sha256" : "6cea33d67a9bd83f8bd250655c78a2c89ea912bcc6be91c8e65807ce69cfdfd6",
+      "md5" : "147626dfa61ae7175b1fe170ea986b42",
+      "id" : "tweetnacl-0.14.5.tgz",
+      "scopes" : [ "production" ]
+    }, {
+      "sha1" : "fbc71f0c41adeb37f96c577ad1ed42d8fdacca91",
+      "sha256" : "eca862e1fd07bf54ff68ccf70450a64dc3d6b807ee9e3ddeb5d96773a3c806c5",
+      "md5" : "0c2c460c7ac767b7c00cb1e3b9984397",
+      "id" : "forever-agent-0.6.1.tgz",
+      "scopes" : [ "production" ]
+    }, {
+      "sha1" : "dcce52c05f644f298c6a7ab936bd724ceffbf3a6",
+      "sha256" : "e39ecf83f4c79bb67004b7023d353e718db5a0c27bd4909957187b8d4e5033c8",
+      "md5" : "08833fa830e83c7c4962e446a0b1a759",
+      "id" : "form-data-2.3.3.tgz",
+      "scopes" : [ "production" ]
+    }, {
+      "sha1" : "96918440e3041a7a414f8c52e3c574eb3c3e1e05",
+      "sha256" : "cf9b392605f59c195d1d44f20162170a4e44bcedc01dddf3cbe6bc594faed044",
+      "md5" : "6fd1b36e5e2db71537d1ad5e74173e9f",
+      "id" : "extsprintf-1.3.0.tgz",
+      "scopes" : [ "production" ]
+    }, {
+      "sha1" : "a94c2224ebcac04782a0d9035521f24735b7ec92",
+      "sha256" : "2e7b84af0567ad7c6a5ddcb5f4c1bcc2bd29d4b089d734f628ac08517081be26",
+      "md5" : "6277eec9cab1d80a59ddf153574651c0",
+      "id" : "har-schema-2.0.0.tgz",
+      "scopes" : [ "production" ]
+    }, {
+      "sha1" : "e479c80858df0c1b11ddda6940f96011fcda4a9a",
+      "sha256" : "0d5c97ab733832aa006929b933decd71af74d92dcc857637840cb47496c83845",
+      "md5" : "d5efec2afc8b29ff367a2127cd1890b2",
+      "id" : "is-typedarray-1.0.0.tgz",
+      "scopes" : [ "production" ]
+    }, {
+      "sha1" : "7b05218ddf9667bf7f370bf7fdb2cb15fdd0aa49",
+      "sha256" : "af904cb3b39d675ab2828b5b873f74e52aa682bb612078489ffbf71fb0a47128",
+      "md5" : "214c8887f4f3082d8eabf58851071703",
+      "id" : "fast-deep-equal-2.0.1.tgz",
+      "scopes" : [ "production" ]
+    }, {
+      "sha1" : "fb661c0bef29b39db40769ee39fa70093d6f6877",
+      "sha256" : "5c4adda13e7ac814c9668bd3d495e3292f4b5d041f181bf5bbd092dd5d2b0839",
+      "md5" : "37ca447c8240cb57a9a7cf01e54c2f43",
+      "id" : "sshpk-1.16.1.tgz",
+      "scopes" : [ "production" ]
+    }, {
+      "sha1" : "a4301d389b6a43f9b67ff3ca11a3f6637e360e9e",
+      "sha256" : "e13e9e9f5d438223a02a906e6b77dfc97985a4ccf469ddb65261012973f07826",
+      "md5" : "ee5fb616e90ea464921ba8033c0b3a5c",
+      "id" : "bcrypt-pbkdf-1.0.2.tgz",
+      "scopes" : [ "production" ]
+    }, {
+      "sha1" : "94c540e1ff772956e2299507c010aea6c8838eb0",
+      "sha256" : "fa2e3a0fdbe0ab9dc82cefdb424370fac52ded8d412bbd51d655aa24716df7ae",
+      "md5" : "56cf9d223d47c2f43e03ab4a017f1451",
+      "id" : "uri-js-4.2.2.tgz",
+      "scopes" : [ "production" ]
+    }, {
+      "sha1" : "b5fd54220aa2bc5ab57aab7140c940754503c1a7",
+      "sha256" : "a4a44dab6579ede3e06ade58d26f8fd642eae09153fd59c608fcb7951a499398",
+      "md5" : "36dbf1e4e5f3cbec553c074cbd5939fd",
+      "id" : "core-util-is-1.0.2.tgz",
+      "scopes" : [ "production" ]
+    }, {
+      "sha1" : "b58b010ac40c22c5657616c8d2c2c02c7bf479ec",
+      "sha256" : "e5ccd079bf02390e34cbb51b75f73a8be42795146a2e2e23cbb204dddb04ff3c",
+      "md5" : "189447403a7580274f318eb19af7ea8c",
+      "id" : "punycode-2.1.1.tgz",
+      "scopes" : [ "production" ]
+    }, {
+      "sha1" : "991ec69d296e0313747d59bdfd2b745c35f8828d",
+      "sha256" : "e09206c60fccafb952c854af7629cbb031a98d6da2e143fb3aa3c8a48402aa22",
+      "md5" : "dc7142b470e0957c5c34098b6fced0ab",
+      "id" : "safe-buffer-5.1.2.tgz",
+      "scopes" : [ "production" ]
+    }, {
+      "sha1" : "69f6a87d9513ab8bb8fe63bdb0979c448e684660",
+      "sha256" : "f735add93641842e13096c8b3239f54e9b0b10e8ffd8a377400f4d61eabec065",
+      "md5" : "6f749381b67dce4faab5b02aa6c9db55",
+      "id" : "json-schema-traverse-0.4.1.tgz",
+      "scopes" : [ "production" ]
+    }, {
+      "sha1" : "9aecd925114772f3d95b65a60abb8f7c18fbace1",
+      "sha256" : "66be6d6fddeaf39acc4fb1437af28ff6a0401a740c479f183718f649d03205f9",
+      "md5" : "263b67bf9ae18003ee513825bfedcce7",
+      "id" : "http-signature-1.2.0.tgz",
+      "scopes" : [ "production" ]
+    }, {
+      "sha1" : "c0d5a63b2718800ad8e1eb0fa5269c84dd41845e",
+      "sha256" : "452bca7369ca14bc47711c79063f5f0f3939095918508ca7400f5859448ded89",
+      "md5" : "57a7a5194db5c758db227a3648fb7a4c",
+      "id" : "punycode-1.4.1.tgz",
+      "scopes" : [ "production" ]
+    }, {
+      "sha1" : "b6f8d0b3e951efb77dedeca194cff6d16f676f81",
+      "sha256" : "c16bb65431ce422b3b69b6bb45a7d2cb9a54a6771868d67a1b41dc3e42d4eed8",
+      "md5" : "1256706dd13c0e0c57247f4e37460641",
+      "id" : "mime-types-2.1.24.tgz",
+      "scopes" : [ "production" ]
+    }, {
+      "sha1" : "cb3ae806e8740444584ef154ce8ee98d403f3e36",
+      "sha256" : "539349384f28c64d970ee897379839967dcc2a9c5b03a4db49cb1c0e5e2e16f0",
+      "md5" : "222120eb1146b4919d75bf117b2d380f",
+      "id" : "qs-6.5.2.tgz",
+      "scopes" : [ "production" ]
+    }, {
+      "sha1" : "853cfa0f7cbe2fed5de20326b8dd581035f6e2f0",
+      "sha256" : "8b79ebde18aa8f10aba37e32dcecbe376023c79776510e06e9a53f5e68555340",
+      "md5" : "10e52530e0086914a59d498cb1637c7e",
+      "id" : "dashdash-1.14.1.tgz",
+      "scopes" : [ "production" ]
+    }, {
+      "sha1" : "27a5dea06b36b04a0a9966774b290868f0fc40fd",
+      "sha256" : "d3e3c04a50d6d2fa40654bf764fa1792f797bd5a62c69d03dceaa7d4a85c5012",
+      "md5" : "0fa5d2c7d1fc791c54124d9558ed39aa",
+      "id" : "tunnel-agent-0.6.0.tgz",
+      "scopes" : [ "production" ]
+    }, {
+      "sha1" : "c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79",
+      "sha256" : "8c254f30f70792645042e4d71f590ec49f8e386a475772f7430c73b964b57dcf",
+      "md5" : "54e27449ef7679e93c75930c340dc4a0",
+      "id" : "asynckit-0.4.0.tgz",
+      "scopes" : [ "production" ]
+    }, {
+      "sha1" : "1ef89ebd3e4996557675eed9893110dc350fa080",
+      "sha256" : "7a282cdeb62fa92eabcf07f7e1a1e37673b4212cf86b6eb1d7d396d330550f4d",
+      "md5" : "026332de4216b7f9111ecd6804a54b31",
+      "id" : "har-validator-5.1.3.tgz",
+      "scopes" : [ "production" ]
+    }, {
+      "sha1" : "f0e003d9ca9e7f59c7a508945d7b2ef9a04a542f",
+      "sha256" : "b6110cc1af4f32d0cd37d38fe38f49b6efac4eb83d591af651e1ee871d228d08",
+      "md5" : "dc49ff5beae4bbb05fc74f4538d8399a",
+      "id" : "aws4-1.8.0.tgz",
+      "scopes" : [ "production" ]
+    }, {
+      "sha1" : "313e66bc1e5cc06e438bc1b7499c2e5c56acb6a2",
+      "sha256" : "1df307cc675650ee56c4a5f7c87860dd56d7e42f6350e715c1a92a280322ec46",
+      "md5" : "07fa4efad9f3688d08363e074a49e7df",
+      "id" : "jsprim-1.4.1.tgz",
+      "scopes" : [ "production" ]
+    }, {
+      "sha1" : "47e63f7af55afa6f92e1500e690eb8b8529c099a",
+      "sha256" : "79ae4378a2a3446fb72177b57138c1382565ad75e50baba2909731ebb5c90b44",
+      "md5" : "c75038b8cfb456c19d0bb215fb5a631a",
+      "id" : "isstream-0.1.2.tgz",
+      "scopes" : [ "production" ]
+    }, {
+      "sha1" : "df3ae199acadfb7d440aaae0b29e2272b24ec619",
+      "sha256" : "ac38fce4217dfb1d772427c7d8d0d073e35ecd832915e97a61d9ab5c504129d3",
+      "md5" : "d952bd4539d68c2c779a23dd75c1c6b1",
+      "id" : "delayed-stream-1.0.0.tgz",
+      "scopes" : [ "production" ]
+    }, {
+      "sha1" : "90d0d54439da587cd7e843bfb7045f50bd22bdf1",
+      "sha256" : "e196e635fd0f56523997271fbd358fbb021330ed2c348e9271d93338fba6f0eb",
+      "md5" : "72e7a16ea80b9d9f02244088336b805b",
+      "id" : "ajv-6.10.0.tgz",
+      "scopes" : [ "production" ]
+    }, {
+      "sha1" : "5eff8e3e684d569ae4cb2b1282604e8ba62149fa",
+      "sha256" : "8f0312ba10766d6c13bf71bae5168ca26191f6eed5c47ac5fa7c4df85b3ed445",
+      "md5" : "32d7ddf970d9ed3e525fe1b2425f942d",
+      "id" : "getpass-0.1.7.tgz",
+      "scopes" : [ "production" ]
+    }, {
+      "sha1" : "3a83a904e54353287874c564b7549386849a98c9",
+      "sha256" : "609ad25ccc6d5301c822fbf52ccd3f77f46dd02ce626b85d8020c3fb61a46974",
+      "md5" : "7e3ad5fca20a2858e7f645289d48dda2",
+      "id" : "ecc-jsbn-0.1.2.tgz",
+      "scopes" : [ "production" ]
+    }, {
+      "sha1" : "b480c892e59a2f05954ce727bd3f2a4e882f9e13",
+      "sha256" : "e3163c53fbc030cb6ac9bd9652f20a62d3d0580e4eeafe9cb36571ca2bee933f",
+      "md5" : "40a6db88dc58bf0778335c058b9754bf",
+      "id" : "json-schema-0.2.3.tgz",
+      "scopes" : [ "production" ]
+    } ]
+  } ]
+}

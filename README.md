@@ -1,6 +1,5 @@
 # artifactory-client-node
 
-Artifactory Node Client
 Artifactory Node client provides simple yet powerful Artifactory connection and management within your Node code.
 
 ## Getting Started
@@ -414,3 +413,4 @@ Set environment variable `export NODE_TLS_REJECT_UNAUTHORIZED=0` to ignore SSL c
         console.log(err);
     });
 ```
+

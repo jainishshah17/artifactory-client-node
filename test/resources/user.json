@@ -6,5 +6,6 @@
      "profileUpdatable": true,
      "disableUIAccess" : true,
      "internalPasswordDisabled": false,
-     "realm": "Internal"
+     "realm": "Internal",
+     "groups" : [ "dev" ]
   }

@@ -4,7 +4,7 @@
   "description": "Artifactory REST Client Node",
   "main": "index.js",
   "scripts": {
-    "test": "node test/test.js",
+    "test": "mocha",
     "start": "node index.js"
   },
   "repository": {
@@ -29,5 +29,8 @@
     "fs": "0.0.1-security",
     "path": "^0.12.7",
     "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "mocha": "^6.1.4"
   }
 }
