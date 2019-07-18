@@ -414,3 +414,58 @@ Set environment variable `export NODE_TLS_REJECT_UNAUTHORIZED=0` to ignore SSL c
     });
 ```
 
+#### Artifactory create permission
+```
+  var artCli = require('artifactory-client-node');
+  var security = new artifactory.security();
+    
+    var createPermission = security.createPermission("developers", "./test/resources/permission.json");
+    createPermission.then(function (result) {
+        var result = result;
+        console.log(result)
+    }, function (err) {
+        console.log(err);
+    });
+```
+
+#### Artifactory get all permission
+```
+  var artCli = require('artifactory-client-node');
+  var security = new artifactory.security();
+   
+   var getAllPermission = security.getAllPermission();
+    getAllPermission.then(function (result) {
+        var result = result;
+        console.log(result)
+    }, function (err) {
+        console.log(err);
+    });
+```
+
+#### Artifactory get permission
+   ```
+     var artCli = require('artifactory-client-node');
+     var security = new artifactory.security();
+      
+       var getPermission = security.getPermission("developers");
+       getPermission.then(function (result) {
+           var result = result;
+           console.log(result)
+       }, function (err) {
+           console.log(err);
+       });
+   ```
+   
+#### Artifactory delete permission
+```
+  var artCli = require('artifactory-client-node');
+  var security = new artifactory.security();
+   
+    var deletePermission = security.deletePermission("developers");
+    deletePermission.then(function (result) {
+        var result = result;
+        console.log(result)
+    }, function (err) {
+        console.log(err);
+    });
+```

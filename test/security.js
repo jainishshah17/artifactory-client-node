@@ -75,6 +75,33 @@ describe('Security Tests', function () {
         });
     });
 
+    it('create permission', function () {
+        var createPermission = security.createPermission("developers", "./test/resources/permission.json");
+        createPermission.then(function (result) {
+            assert.equal(result, "");
+        }, function (err) {
+            console.log(err);
+        });
+    });
+
+    it('get all permission', function () {
+        var getAllPermission = security.getAllPermission();
+        getAllPermission.then(function (result) {
+            assert.notEqual(result, "");
+        }, function (err) {
+            console.log(err);
+        });
+    });
+
+    it('get permission', function () {
+        var getPermission = security.getPermission("developers");
+        getPermission.then(function (result) {
+            assert.notEqual(result, "");
+        }, function (err) {
+            console.log(err);
+        });
+    });
+
     it('encrypted password', function () {
         var encryptedPassword = security.getEncryptedPassword();
         encryptedPassword.then(function (result) {
@@ -123,6 +150,15 @@ describe('Security Tests', function () {
     it('revoke user API Key', function () {
         var revokeUserApiKey = security.revokeUserApiKey("jainishs");
         revokeUserApiKey.then(function (result) {
+            assert.notEqual(result, "");
+        }, function (err) {
+            console.log(err);
+        });
+    });
+
+    it('delete permission', function () {
+        var deletePermission = security.deletePermission("developers");
+        deletePermission.then(function (result) {
             assert.notEqual(result, "");
         }, function (err) {
             console.log(err);
