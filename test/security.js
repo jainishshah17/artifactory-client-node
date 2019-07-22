@@ -156,6 +156,42 @@ describe('Security Tests', function () {
         });
     });
 
+    it('create Tokens', function () {
+        var createToken = security.createToken("jainishs", "member-of-groups:readers");
+        createToken.then(function (result) {
+            assert.notEqual(result, "");
+        }, function (err) {
+            console.log(err);
+        });
+    });
+
+    it('get All Tokens', function () {
+        var getAllToken = security.getAllToken();
+        getAllToken.then(function (result) {
+            assert.notEqual(result, "");
+        }, function (err) {
+            console.log(err);
+        });
+    });
+
+    it('refresh Token', function () {
+        var refreshToken = security.refreshToken("test", "test", "jainishs","member-of-groups:readers", 3600);
+        refreshToken.then(function (result) {
+            assert.notEqual(result, "");
+        }, function (err) {
+            console.log(err);
+        });
+    });
+
+    it('revoke Token', function () {
+        var revokeToken = security.revokeToken("token");
+        revokeToken.then(function (result) {
+            assert.notEqual(result, "");
+        }, function (err) {
+            console.log(err);
+        });
+    });
+
     it('delete permission', function () {
         var deletePermission = security.deletePermission("developers");
         deletePermission.then(function (result) {
