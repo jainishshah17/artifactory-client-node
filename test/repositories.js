@@ -60,6 +60,27 @@ describe('Repositories Tests', function () {
         });
     });
 
+    it('set remote repo online', function () {
+        var setOnline = repositories.setOnline("helm-dev-remote");
+        setOnline.then(function (result) {
+            console.log(result);
+            assert.notEqual(result, "");
+        }, function (err) {
+            console.log(err);
+        });
+    });
+
+
+    it('set remote repo offline', function () {
+        var setOffline = repositories.setOffline("helm-dev-remote");
+        setOffline.then(function (result) {
+            console.log(result);
+            assert.notEqual(result, "");
+        }, function (err) {
+            console.log(err);
+        });
+    });
+
     it('update repo', function () {
         var updateRepo = repositories.updateRepo("helm-dev","./test/resources/virtual-repo.json" );
         updateRepo.then(function (result) {
