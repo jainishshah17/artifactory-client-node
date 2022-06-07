@@ -1,6 +1,6 @@
 {
   "name": "artifactory-client-node",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "Artifactory REST Client Node",
   "main": "index.js",
   "scripts": {
