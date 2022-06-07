@@ -13,8 +13,8 @@ describe('Security Tests', function () {
     });
 
     it('create group', function () {
-        var createGoup = security.createGroup("dev", "./test/resources/group.json");
-        createGoup.then(function (result) {
+        var createGroup = security.createGroup("dev", "./test/resources/group.json");
+        createGroup.then(function (result) {
             assert.equal(result, "");
         }, function (err) {
             console.log(err);
@@ -96,6 +96,16 @@ describe('Security Tests', function () {
     it('get permission', function () {
         var getPermission = security.getPermission("developers");
         getPermission.then(function (result) {
+            assert.notEqual(result, "");
+        }, function (err) {
+            console.log(err);
+        });
+    });
+
+    it('get effective item permission', function () {
+        var getPermission = security.getEffectiveItemPermission("dev-npm-local/artifactory-client-node/");
+        getPermission.then(function (result) {
+            console.log(result);
             assert.notEqual(result, "");
         }, function (err) {
             console.log(err);

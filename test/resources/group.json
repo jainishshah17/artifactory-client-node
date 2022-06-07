@@ -2,5 +2,8 @@
     "name": "dev",
     "description": "The development group",
     "autoJoin": false,
-    "adminPrivileges": false
+    "adminPrivileges": false,
+    "watchManager": false,
+    "policyManager": false,
+    "reportsManager": false
 }

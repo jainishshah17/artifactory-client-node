@@ -7,5 +7,7 @@
      "disableUIAccess" : true,
      "internalPasswordDisabled": false,
      "realm": "Internal",
-     "groups" : [ "dev" ]
+     "groups" : [ "dev" ],
+     "watchManager" : true,
+     "policyManager": false
   }
